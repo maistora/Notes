@@ -22,13 +22,13 @@
 
     Richard Stallman
 
-        * GNU (GNU's Not Unix)(1983) пример за рекурсия
+        * GNU (GNU`s Not Unix)(1983) пример за рекурсия
         * FSF(Free Software Foundation)(1985)
         * GNU GPL(General Public License)
               o Guarantees that free software remains free
               o All software under the GPL make source available to the end user
-              o Changes to a GPL'd software package must also be licensed under GPL
-              o Source code from one GPL'd software package can be incorporated in to other GPL'd software
+              o Changes to a GPL`d software package must also be licensed under GPL
+              o Source code from one GPL`d software package can be incorporated in to other GPL`d software
         * Alix / Hurd -  това не ми стана много ясно какво е точно само съм записал ,че е разработка на някакъв kernel
 
 Ядрото (kernel) на GNU - Hurd подлежи на дълъг процес на разработка, за това се използва Linux за kernel на GNU.
@@ -36,14 +36,14 @@
     The Free Software Definitoin - идеята е че free се употребява в смисъл на Свободен, не на Безплатен 
     - тук триябва да е дефиницията , но :) липсва 
 
-    Книгата която ни препоръчаха : Free as in Freedom: Richard Stallman's Crusade for Free Software
+    Книгата която ни препоръчаха : Free as in Freedom: Richard Stallman`s Crusade for Free Software
 
     Linux Kernel
 
         * Linus Torvalds - създателя на Linux ядрото
         * Minix - Unix операционна систем използвана с учебна цел
         * Th Linux Kernel
-              o re-implementation of the UNIX API's
+              o re-implementation of the UNIX API`s
               o GPL license
         * GNU/Linux
         * GNU/Hurd
@@ -238,7 +238,7 @@
 		- -R - recursively modify permissions
 		- supports both numeric and symbolic notation
 		- special permissions
-		- set UID (SUID) - A program is executed with the file owner's permissions (rather than with the permissions of the user who executes it).
+		- set UID (SUID) - A program is executed with the file owner`s permissions (rather than with the permissions of the user who executes it).
 			- ex. : password change (only root can write in the file with the passwords but a user can change his pass too)
 		- set GID (SGID)
 		- sticky
@@ -263,7 +263,7 @@
 	- SGID 
 		- 
 	- Sticky bit
-		- Normally in a directory that is world writable, sers can delete each other's files. Setting the sticky bit overrides this behavior.
+		- Normally in a directory that is world writable, sers can delete each other`s files. Setting the sticky bit overrides this behavior.
 		- If I create a file in a dir and somebody else also creates file in the same dir if the sticky bit is set I can delete only my files
 			and the other guy can delete only his.
 
@@ -309,9 +309,9 @@
 		- ln [OPTION] ... TARGET LINK_NAME 
 		<it is recomended to use absolute path>
 	- Hard links - a directory entry that references the same inode as another directory entry
-		- can't span filesystems (no hard-links between diff filesystems because they have their own pools with inodes)
-		- can't create hard links to non-existent file
-		- can't reference directories
+		- can`t span filesystems (no hard-links between diff filesystems because they have their own pools with inodes)
+		- can`t create hard links to non-existent file
+		- can`t reference directories
 		- do not occupy storage space (i.e. blocks)
 	- Symbolic links -a file that references another file via path and name (ln -s)
 		- can reference directories
@@ -393,7 +393,7 @@
     Archives with cpio (трябва му списък от файловете)
 	- manipulates .cpio files
 	- used as the basis for RPM packages
-	- doesn't recurse sub-directories, must be passed list of directories
+	- doesn`t recurse sub-directories, must be passed list of directories
 	- more rebust that tar when media errors encountered 
 	- -i - input mode, used when feeding a cpio archive into the cpio command <input> (разархивиране)
 	- -o - output mode, used to create cpio archives, which are sent to STDOUT <output> (архивиране)
@@ -480,7 +480,7 @@
 		- -B NUM - prints match and preceding NUM lines
 		- -C NUM - prints match and NUM lines before and after
 		- -i - preforms case insensitive match
-		- -v - inverts match; prints what doesn't match
+		- -v - inverts match; prints what doesn`t match
 		- --color - highlight matched string in color
 
 	- ex: 
@@ -525,7 +525,7 @@
 		* $ sort < /etc/passwd
 
 		- redirect standard output with > 
-		* $ echo 10000 > /proc/sys/fs/file-max - don't do this
+		* $ echo 10000 > /proc/sys/fs/file-max - don`t do this
 
 		- redirect standard error with 2>
 		* $ ls - a1R /proc/ 2> /dev/null
@@ -626,7 +626,7 @@
 
     Brace Expansion 
 	- allows generation of arbitrary strings
-	- similar to wildcards, but target files or directories don't need to exist
+	- similar to wildcards, but target files or directories don`t need to exist
 	- can have optional preamble and/or postamble
 		- {m,n,o.on} expands to: m , n , o and on
 		- d{m,n,o,on}t  ????????????
